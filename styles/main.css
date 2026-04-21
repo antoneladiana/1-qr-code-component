@@ -60,7 +60,7 @@ main {
 /* Image */
 
 .card__image {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 10px;
