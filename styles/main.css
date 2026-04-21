@@ -1,0 +1,103 @@
+/* ========================================================================
+   GLOBAL STYLES
+======================================================================== */
+
+/* Variables */
+:root {
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #ffffff;
+  --font-text-preset-1: 700 22px/1.2 "Outfit", sans-serif;
+  --letter-spacing-text-preset-1: 0px;
+  --font-text-preset-2: 400 15px/1.4 "Outfit", sans-serif;
+  --letter-spacing-text-preset-2: 0.2px;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+}
+
+/* Scroll behavior */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Body */
+body {
+  background-color: var(--color-slate-300);
+}
+
+/* Images */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========================================================================
+   COMPONENTS
+======================================================================== */
+
+/* Main */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/* Card */
+
+.card {
+  background-color: var(--color-white);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 320px;
+  width: 85%;
+  height: 500px;
+  padding: var(--spacing-200);
+  border-radius: 20px;
+}
+
+/* Image */
+
+.card__image {
+  border-radius: 10px;
+}
+
+/* Info */
+
+.card__info {
+  padding: var(--spacing-300) var(--spacing-200);
+}
+
+.card__title {
+  color: var(--color-slate-900);
+  font: var(--font-text-preset-1);
+  letter-spacing: var(--letter-spacing-text-preset-1);
+  margin-bottom: var(--spacing-200);
+}
+
+.card__description {
+  color: var(--color-slate-500);
+  font: var(--font-text-preset-2);
+  letter-spacing: var(--letter-spacing-text-preset-2);
+}
+
+/* Attribution */
+.attribution {
+  color: var(--color-slate-500);
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center;
+  padding: 5vh 0;
+}
+.attribution__link {
+  color: var(--color-slate-900);
+}
+.attribution__link:hover {
+  text-decoration: none;
+  font-weight: 400;
+}
